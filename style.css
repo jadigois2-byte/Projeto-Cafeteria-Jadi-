@@ -1,0 +1,255 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #4b2e20;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #5c3a29;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* MENU */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f3c6a5;
+}
+
+
+/* SEÇÕES */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #6b3e26;
+    margin-bottom: 15px;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #f5dfcf;
+}
+
+.inicio-texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.inicio-texto h2 {
+    font-size: 40px;
+}
+
+.inicio-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* IMAGEM */
+
+.inicio-imagem img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #6b4228;
+}
+
+
+/* CARDÁPIO */
+
+.descricao {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.cardapio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.produto {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+}
+
+.produto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    margin-bottom: 10px;
+    color: #6b3e26;
+}
+
+.produto p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.produto span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8b5e3c;
+}
+
+
+/* SOBRE NÓS */
+
+.sobre {
+    background-color: #ead0bd;
+}
+
+.sobre div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre p {
+    font-size: px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+
+/* CONTATO */
+
+.contato {
+    background-color: #f5dfcf;
+}
+
+.informacoes {
+    margin: 25px 0;
+}
+
+.informacoes p {
+    margin: 12px;
+    font-size: 17px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #5c3a29;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-texto {
+        text-align: center;
+    }
+
+    .inicio-texto h2 {
+        font-size: 32px;
+    }
+
+    .inicio-imagem img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .produto {
+        width: 90%;
+        max-width: 300px;
+    }
+    }
+
+
